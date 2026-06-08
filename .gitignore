@@ -1,0 +1,5 @@
+# extract-utils working/scratch — not for publication
+soong-conflicts-*.txt
+elf-vendor-bins.txt
+# Android.bp: incomplete soong-migration artifact (tree uses Android.mk) — review before publishing
+Android.bp

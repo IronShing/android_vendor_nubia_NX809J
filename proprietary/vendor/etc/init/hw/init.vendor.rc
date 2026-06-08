@@ -286,7 +286,7 @@ on post-fs
     # setting it too late can cause adb failure, do it right after hml_version's context is set.
     # concat_props_zte is mapped to a BuildinFunction defined by zte to generate and set zte_props.
     # Make sure concat_props_zte is mapped to a BuildinFunction.
-    concat_props_zte
+    # concat_props_zte  # Disabled: ZTE-custom init keyword not available in AOSP/LineageOS
 
 on mmi && property:ro.bootmode=ffbm-02
     chown system system /dev/i2c-8

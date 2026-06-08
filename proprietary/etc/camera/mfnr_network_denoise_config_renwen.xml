@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="no"?>
+<mfnr_network_denoise_config>
+    <PhoneConfigParam cache_path="/data/vendor/camera/" phone_id="NX809J"
+        k1_net="0.0004897055f" k2_net="0.01507620f" s1_net="7.910723e-7f" s2_net="0.002898401f" use_raw_brightness="2" anchor_y="0.3" drc_dark_gain="1.35" use_portrait_mask="1"
+        s3_net="-1.223214f" black_level_net="64" white_level_net="1023" iso_a="2000"
+        model_width="528" model_height="528" tflite_model="tflite_model_denoise_deblur_refine_a0p99_528">
+        <CameraConfigParam camera_id="0" factor_rough="8" k1_camera="0.00042237663858424486f"
+            k2_camera="0.008902140914172296f" s1_camera="1.0958473321367339e-07f" s2_camera="0.0019139940420416892f" s3_camera="0.19580793372228386f"
+            black_level_camera="64" white_level_camera="1023" max_analog_iso="6400" num_w="4"
+            num_h="3" threshold_dpc_luma_percent="0.005f" clahe_strength="1.0f" min_net_ratio="0.85f" enhance_low_light="1" low_brightness="0.2f" normal_brightness="0.35f" brighten_factor="1.0f"></CameraConfigParam>
+        <CameraConfigParam camera_id="1" factor_rough="8" k1_camera="0.0005954980601593063f"
+            k2_camera="0.00881361268494385f" s1_camera="1.2736085651143634e-06f"
+            s2_camera="0.0011864564275292774f" s3_camera="0.03445613589013786f"
+            black_level_camera="64" white_level_camera="1023" max_analog_iso="1550" num_w="3"
+            num_h="2" threshold_dpc_luma_percent="0.005f" min_net_ratio="0.7f" target_brightness="1.0f"></CameraConfigParam>
+        <CameraConfigParam camera_id="2" factor_rough="8" k1_camera="0.0008858594465080693f" k2_camera="0.06499332344670083f" 
+            s1_camera="5.484510575138704e-07f" s2_camera="0.008731185321944723f" s3_camera="-0.7457858368500092f"
+            black_level_camera="64" white_level_camera="1023" max_analog_iso="1550" num_w="4" drc_dark_gain="1.30" anchor_y="0.2"
+            num_h="3" threshold_dpc_luma_percent="0.02f" min_net_ratio="0.95f" clahe_strength="1.0f" enhance_low_light="1" low_brightness="0.2f" normal_brightness="0.35f" brighten_factor="1.0f"></CameraConfigParam>
+        <CameraConfigParam camera_id="3" factor_rough="8" k1_camera="0.000638086456057819f"
+            k2_camera="-0.02524397867743966f" s1_camera="9.412475017838612e-07f"
+            s2_camera="0.0027624054214249534f" s3_camera="0.4842212091378713f"
+            black_level_camera="64" white_level_camera="1023" max_analog_iso="1000" num_w="5"
+            num_h="4" threshold_dpc_luma_percent="0.015f" min_net_ratio="0.9f" target_brightness="0.2f" ></CameraConfigParam>
+        <CameraConfigParam camera_id="30" factor_rough="8" k1_camera="0.002552345824231276f" k2_camera="-0.10097591470975864f" 
+            s1_camera="0.0000037649900071354448f" s2_camera="0.0110496216856998136f" s3_camera="1.9368848365514852f"
+            black_level_camera="64" white_level_camera="1023" max_analog_iso="1000" num_w="5"
+            num_h="4" threshold_dpc_luma_percent="0.015f" min_net_ratio="0.9f" target_brightness="0.2f" ></CameraConfigParam>
+    </PhoneConfigParam>
+    <Mode name="hdr">
+        <CameraConfigParam camera_id="0"  target_brightness="0.2f" clahe_strength="0.3f" clahe_strength1="1.0f" roi_clahe_strength = "0.0f" ></CameraConfigParam>
+        <CameraConfigParam camera_id="2"  target_brightness="0.2f" clahe_strength="0.3f" clahe_strength1="0.1f" roi_clahe_strength = "0.0f" ></CameraConfigParam>
+        <CameraConfigParam camera_id="3"  target_brightness="0.2f" clahe_strength="0.1f" clahe_strength1="1.0f" roi_clahe_strength = "0.0f"></CameraConfigParam>
+        <CameraConfigParam camera_id="30"  target_brightness="0.2f" clahe_strength="0.1f" clahe_strength1="1.0f" roi_clahe_strength = "0.0f"></CameraConfigParam>
+    </Mode>
+</mfnr_network_denoise_config>
